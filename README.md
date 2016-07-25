@@ -9,6 +9,6 @@ This project selects a winner or winners based on the Swiss system tournament.
 ## How to run:
 
   - Dowload the repository
-  - Type the command "vagrant up" to initialize vagrant
+  - Type the command "vagrant up" to initialize
   - Type "vagrant ssh" to connect to the virtual machine
   - The project files will be found in /vagrant/tournament
