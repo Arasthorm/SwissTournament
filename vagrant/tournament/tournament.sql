@@ -12,11 +12,11 @@ CREATE DATABASE tournament;
 \c tournament;
 
 CREATE TABLE players ( username TEXT,
-                     id SERIAL);
+                     id SERIAL primary key);
 
-CREATE TABLE matches ( winner INTEGER,
-                       loser INTEGER,
-                       id SERIAL);
+CREATE TABLE matches ( winner INTEGER references players(id),
+                       loser INTEGER references players(id),
+                       id SERIAL primary key);
 
 
 -- View to get the number of wins by left joining players with matches
